@@ -1,0 +1,277 @@
+/*----------Landscape:901px-1300px------------------------------*/
+@media screen and (min-width:901px) and ( max-width:1300px) {
+    body{
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+/*----------Tablet:761px-900px------------------------------*/
+@media screen and (min-width:761px) and ( max-width:900px) {
+    body{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    /*-----------Index-page---------*/
+    .slider{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    /*-----------Sale/Shopping-Cart---------*/
+    .shop-items img{
+        margin-right: 10px;
+      }
+
+    .page-header{
+        max-width: 100%;
+    }
+
+    .shop-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    /*-----------Contact-page---------*/
+    header{
+        position: relative;
+        max-width: 100%;
+    }
+
+    .contact-bk{
+        margin-top: 10px;
+    }
+    
+    form label{
+        margin: 0 10px 0 200px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        margin: 0 10px 0 200px;
+        width:350px;
+    }
+    
+    input[type="submit"]{
+        margin: 0 10px 20px 200px;
+        width:160px;
+    }
+}/*Tablet:761px-810px*/
+
+/*----------Landscpe:481px-760px------------------------------*/
+@media screen and (min-width:461px) and (max-width:760px) {
+    /*-----------Index-page---------*/
+    .slider{
+        display: none;
+     }
+
+     .picture-and-text, .logo{
+        flex-direction: column;
+        margin:0 10px;
+    }
+
+    .about-us img{
+        margin-left:0;
+    }
+
+    canvas{
+        margin-top:50px;
+        margin-left:auto;
+    }
+
+    .logo{
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .contact-us{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    /*-----------Sale-shopping-cart-page---------*/
+    .shop-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .cart-total-title{
+        position: relative;
+        left: 150px;
+        width: 40px;
+        }
+        
+    .cart-total-price{
+        position: relative;
+        left: 150px;
+        width: 40px;
+        }
+        
+    .btn-purchase{
+        position: relative;
+        left: 150px;
+        width:140px;
+    }
+    
+    
+    .logo{
+        margin-left: 200px ;
+    }
+    
+    .contact-us{
+        text-align: center;
+        margin-top:0;
+    }
+
+
+    /*-----------Contact-page---------*/
+    header{
+        position: relative;
+    }
+
+    .contact-bk{
+        margin-top: 10px;
+    }
+    
+    form label{
+        margin: 0 10px 0 150px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        margin: 0 10px 0 150px;
+        width:350px;
+    }
+    
+    input[type="submit"]{
+        margin: 0 10px 20px 150px;
+        width:160px;
+    }
+
+}/*Landscpe:481px-760px-*/
+
+
+/*-----------Mobile:max480px(f.ex:iPhone etc)------------------*/
+@media screen and (max-width:480px){
+    body{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    header{
+        position: relative;
+    }
+
+    .nav-color{
+        text-align: center;
+    }
+
+    .page-header{
+        flex-direction: column;
+        height: 300px;
+    }
+    
+    .main-navi{
+        flex-direction: column;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    /*-----------Index-page---------*/
+    .slider{
+       display: none;
+    }
+
+    .picture-and-text, .logo{
+        flex-direction: column;
+        margin:0 10px;
+    }
+
+    .about-us img{
+        margin-left:0;
+    }
+
+    .about-us-p{
+        max-width: 100%;
+    }
+
+    canvas{
+        margin-top:50px;
+        margin-left:50px;
+    }
+
+    .logo{
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    .contact-us{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+/*-----------Sale-shopping-cart-page---------*/
+.shop-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 100%;
+    padding:0 10px;
+}
+
+.cart-total-title{
+    position: relative;
+    left: 150px;
+    width: 40px;
+    }
+    
+.cart-total-price{
+    position: relative;
+    left: 150px;
+    width: 40px;
+    }
+
+.btn-purchase{
+    position: relative;
+    left: 150px;
+    width:140px;
+}
+
+.logo{
+    margin-left: 80px ;
+}
+
+.contact-us{
+    text-align: center;
+    margin-top:0;
+}
+
+/*-----------Contact-page---------*/
+.contact-bk{
+    margin-top: 10px;
+}
+
+form label{
+    margin: 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    margin: 0 10px;
+    width:350px;
+}
+
+input[type="submit"]{
+    margin: 0 10px 20px 10px;
+    width:160px;
+
+}
+}/*Mobile:max 480px*/

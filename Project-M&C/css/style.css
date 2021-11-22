@@ -1,0 +1,473 @@
+header{
+justify-content: center;
+height: 150px;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+background-color: PeachPuff;
+}/*all pages*/
+
+.position-fix-header{
+margin-top: 100px;
+}/*all the pages*/
+
+h1{
+font-family: Optima;
+color: #5A5A5A;
+font-size: 4rem;
+text-align: center;
+line-height: 10vh;
+}/*all pages */
+
+h2{
+position: relative;
+text-align: center;
+margin-top: 0px;
+}/*index&cart.html*/
+
+.sale-color a{
+color: red;
+}/*all page,header */
+
+.sale{
+color: red;
+font-size: 4rem;
+font-family: sans-serif;
+line-height: 14vh;
+}/*all page,header */
+
+.main-navi{
+display: flex;
+width:300px;
+justify-content: space-between;
+font-size: 1.25rem;
+margin-top: 10px;
+list-style: none;
+}/*all pages */
+
+.navi-color a{
+color: #ac555f;
+text-decoration: none;/*hide underline of text*/
+}/*Sidan med användaren i navigeringen blir blå.
+Vanligtvis svart.*/
+/*all pages */
+
+.navi-color a:hover {
+color: white;
+}/*all pages */
+
+.main-navi a{
+font-family: Futura;
+color: #ac555f;
+text-decoration: none;/*hide underline of text*/
+}/*all pages */
+
+.main-navi a:hover{
+color: white;
+}/*all pages */
+
+nav li{
+display: inline;
+font-size: 1.5em;
+justify-content: space-around;
+/*margin-right: 190px;*/
+}/*all pages */
+
+.logo-header{
+width: 210px;
+margin-top: 0;
+}/*all pages,logo */
+
+s{
+color: black;
+}/*all pages ,logo-color*/
+
+.logo{
+display: flex;
+}/*index&cart.html */
+
+.logo p{
+margin-top: 120px;
+font-size: 25px;
+}/*index&cart.html */
+
+.logo-link{
+text-align: center;
+}/*index&cart.html */
+
+span{
+opacity: 0;
+transition: all 0.5s ease;
+}/*index&cart.html, Spring Sale animation*/
+
+span.fade{
+opacity: 1;
+}/*index&cart.html, Spring Sale animation*/
+
+/*Image Slide start */
+.page-header{
+margin-top:0px;
+height: 80px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}/*index.html */
+
+.slider{
+width: 700px;
+height: 450px;
+border-radius: 10px;
+overflow: hidden;
+margin-left: 260px;
+}/*index.html, picture slider */
+
+.slides{
+width: 500%;/*The photo is displayed in the full frame at 500%.
+ If it is 100%, it will overlap with other photos.*/
+height: 500px;/*The photo is displayed in the full frame at 500%.
+ If it is 100%, it will overlap with other photos.*/
+display: flex;
+}/*index.html, picture slider */
+
+.slides input{
+display: none;
+}/*index.html, If don't hide it, the input button will be displayed
+on the left side of the photo.  */
+
+.slide{
+width: 20%;/*If I do not set it to 20%,
+ it will overlap with the horizontal photo and there will be a gap. */
+transition: 1s; /*picture slide every 1s. */
+}/*index.html, picture slider */
+
+.slide img{
+width: 800px;
+height: 500px;
+}/*index.html, picture slider */
+
+/*manual slide navigation*/
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;/*Place the button outside (bottom) of the photo */
+display: flex;
+justify-content: center;
+}/*index.html, picture slider */
+
+.manual-btn{
+border: 2px solid #ffcc99;/*If I change the size of 2px here,
+ it will be different from auto-btn. */
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;/*Moves every second  */
+}/*index.html,Fixed button for picture slider */
+
+.manual-btn:not(:last-child){/* :not means, If it doesn't match the :last-child.
+last child is fourth button here. */
+margin-right: 40px;
+}/*index.html, picture slider */
+
+.manual-btn:hover{
+background: #ffcc99;
+}/*index.html, picture slider */
+
+#radio1:checked ~ .first{/*first is from index.html <div class="slide first"> */
+margin-left: 0;
+}/*index.html, picture slider button */
+
+#radio2:checked ~ .first{
+margin-left: -20%;/*move 20% to the left*/
+}/*index.html, picture slider button */
+
+#radio3:checked ~ .first{
+margin-left: -40%;
+}/*index.html, picture slider button */
+
+#radio4:checked ~ .first{
+margin-left: -60%;
+}/*index.html, picture slider button */
+
+/*css for automatic navigation*/
+.navigation-auto{
+position: absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+}/*index.html, picture slider*/
+
+.navigation-auto div{
+border: 2px solid #ffcc99;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;/*picture slide every 1 second */
+}/*index.html, picture slider*/
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}/*index.html, picture slider*/
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #ffcc99;
+}/*index.html,Coloring the current location of the four photos */
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+background: #ffcc99;
+}/*index.html,Coloring the current location of the four photos */
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+background: #ffcc99;
+}/*index.html,Coloring the current location of the four photos */
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+background: #ffcc99;
+}/*index.html,Coloring the current location of the four photos */
+/*Image Slide End */
+
+.about-us{
+font-family: Optima;
+}/*index.html */
+
+.about-us-title{
+font-size: 3em;
+text-align: center;
+}/*index.html */
+
+.picture-and-text{
+  display: flex;
+  margin-left: 60px;
+}/*index.html */
+
+.about-us img{
+  border-radius: 20px;
+  margin-left: 60px;
+}/*index.html */
+
+.about-us-p{
+  font-size: 1.5em;
+  width: 500px;
+  text-align: inherit;/*Align to the left*/
+}/*index.html */
+
+.container{
+font-family: Futura;
+}/*cart.html */
+
+.shop-item-title{
+opacity: 1;/*Since the index.html is made span-tag
+ by using opacity:0;, the opacity is set to 1 here and displayed title.*/
+}/*cart.html*/
+
+.shop-item-price{
+color: red;
+font-size: 130%;
+opacity: 1;/*Since the index.html is made span-tag
+ by using opacity:0;, the opacity is set to 1 here and displayed title.*/
+}/*cart.html*/
+
+/*Start Shopping cart */
+.shop-items{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 25px;
+opacity: 1;/*by using opacity:0;, the opacity is set to 1
+ here and displayed title.*/
+padding: 0 20px;
+margin:0 20px;
+}/*cart.html*/
+
+.shop-item-details{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 15px;
+opacity: 1;/*by using opacity:0;, the opacity is set to 1
+ here and displayed title.*/
+}/*cart.html*/
+
+.section-header{
+padding-top: 50px;
+color:black;
+}/*cart.html*/
+
+.cart-row{
+display: flex;
+justify-content: center;
+}/*cart.html*/
+
+.cart-row:last-child{
+border-bottom: 1px solid black;
+}/*cart.html*/
+/*Add a black line at the end of the items(last-child) in the cart */
+
+.cart-header{
+border-bottom-style: solid;
+border-width: thin;
+}/*cart.html*/
+
+.cart-item{
+width: 30%;
+}/*cart.html*/
+
+.cart-price{
+width: 15%;
+opacity: 1;
+}/*cart.html*/
+
+.cart-quantity{
+width: 20%;
+}/*cart.html*/
+
+.cart-item-image{
+width: 70px;
+height: auto;
+border-radius: 10px;
+}/*cart.html*/
+
+.cart-total-title{
+position: relative;
+left: 790px;
+width: 40px;
+font-size: 30px;
+}/*cart.html*/
+
+.cart-total-price{
+position: relative;
+left: 800px;
+width: 40px;
+font-size: 25px;
+}/*cart.html*/
+
+/*"Add to cart" button. */
+.btn{
+height: 35px;
+text-align: right;
+vertical-align: middle;
+margin-top: 5px;
+padding: 0.8em 0.8em;
+cursor: pointer;
+color: white;
+background-color: grey;
+border: none;
+border-radius: 1em;
+font-weight: bold;
+}/*cart.html*/
+
+.btn:hover{
+color: pink;
+}/*cart.html*/
+
+.btn-purchase{
+position: relative;
+left: 500px;
+height: 55px;
+width:150px;
+text-align: center;
+vertical-align: middle;
+padding: 0.8em 0.8em;
+cursor: pointer;
+background-color: PeachPuff;
+font-size: 1em;
+border: none;
+border-radius: 1em;
+font-weight: bold;
+border: 3px solid #ac555f;
+color: #5A5A5A;
+}/*cart.html*/
+
+.btn-purchase:hover{
+color: red;
+}/*cart.html*/
+
+.contact-bk{/*background*/
+margin: 110px 30px 20px 30px;
+background-color: #ffe6cc;
+}/*contact.html */
+
+.contact-us a{
+color: #5A5A5A;
+font-family: Futura;
+text-decoration: none;/*hide underline of text*/
+}
+/*contact.html*/
+
+.contact-bk{
+color: #5A5A5A;
+}/*contact.html start */
+
+.kontakta_oss {
+text-align: center;
+font-family: Optima;
+} /*contact.html */
+
+form {
+width: 70%;
+display: grid;
+grid-template-columns:  1fr;
+grid-gap: 20px;
+font-family: Futura;
+}/*contact.html width:70% är 70% of screen
+Display label➡︎input,line by line.*/
+
+form label{
+font-size: 1.125rem;
+margin: 0 0 5px 320px;
+width: 100px;
+}/*contact.html*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+background: rgba(255,255,255,0.5);
+border: 1px #fff solid;
+margin: 0 0 5px 320px;
+font-size: 1.5rem;
+}/*contact.html.*/
+
+input[type="text"],
+input[type="email"]{
+width: 100%;
+max-width: 480px;
+height: 3rem;
+}/*contact.html*/
+
+textarea {
+font-family: Futura;
+width: 100%;
+max-width: 480px;
+height: 12rem;
+}/*contact.html*/
+
+input[type="submit"] {
+cursor:pointer;
+line-height: 1;
+width: 50%;
+height: 5rem;
+font-size: 30px;
+background-color: #ffaa80;
+border-radius: 20px;
+margin-left: 320px;
+font-family: Futura;
+margin-bottom: 20px;
+color:#5A5A5A;
+} /*contact.html*/
+
+input[type="submit"]:hover {
+background-color: #ffcccc;
+color: white;
+}/*contact.html. The color changes when the
+user hovers the mouse.*/
+
+.obligatorisk small{
+opacity: 1;
+color: red;
+}/*contact.html. Change ”*” in form to red*/
+
+footer{
+text-align: center;
+}/*all pages */
+
+footer .copyright {
+color: black;
+}/*all pages. Change ”*” in form till red*/

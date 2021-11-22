@@ -1,0 +1,167 @@
+<!DOCTYPE html><!--Deklaration-->
+<html lang="en"><!--Select language-->
+<head><!--User can not see in 'Header'-->
+  <link rel="icon" type="image/png" href="images/logoheart.png"><!--Create Favicon-->
+  <meta charset="utf-8"><!--To character-->
+  <meta name="viewport" content="width=device-width  initial-scale=1.0">
+  <title>M&C</title><!--Title-->
+  <link type="text/css" rel="stylesheet" href="css/style.css"><!--Declaration for used css-->
+  <link type="text/css" rel="stylesheet" href="css/mobile.css"><!--Declaration for used css-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> <!--To use Google font-->
+</head>
+
+  <body><!--What I write inside the body is displayed on the screen.-->
+    <header class="page-header"><!--top of the page are fixed-->
+      <h1 class="navi-color"><a href="index.html">M&C</a></h1>
+      <nav>
+        <ul class="main-navi">
+          <li class="sale-color"><a href="cart.html">SALE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="position-fix-header"><!--Make sure the store name and navigation
+       at the top of the page are fixed in this class. -->
+
+    <h2 class="sale">SPRING SALE NOW!!</h2>
+    <!--When loaded, this character will move with animation. -->
+
+<!--Shop item start -->
+  <div class="container content-section">
+      <div class="shop-items">
+          <div class="shop-item"><!--Since there are 6 products, there are also 6 in this "shop-item" class.  -->
+              <img class="shop-item-image" src="images/flowerDress.jpg" alt="Flower Dress"
+              id="picture1" onmouseover="newPicture('picture1', 'images/flowerDress2.jpg')"
+              onmouseout="newPicture('picture1', 'images/flowerDress.jpg')">
+              <!--Change the picture images with onmouseout and onmouseover. -->
+              <div class="shop-item-details">
+                <span class="shop-item-title">Flower Dress</span>
+                <div class="shop-item-price">
+                  <div> <small><s>$39</s></small>   $28</div><!--Strikethrough with s tag  -->
+                  <div>
+                    <button class="btn btn-primary shop-item-button"
+                    type="button">ADD TO CART</button>
+                  </div>
+                </div><!--shop-item-price-->
+              </div><!--shop-item-details-->
+      </div><!--shop-item -->
+
+          <div class="shop-item"><!--Second product -->
+              <img id="picture2" class="shop-item-image" src="images/redDress.jpg" alt="Red Dress"
+              onmouseover="newPicture('picture2','images/redDress2.jpg')"
+              onmouseout="newPicture('picture2','images/redDress.jpg')">
+              <div class="shop-item-details">
+                  <span class="shop-item-title">Red Dress</span>
+                  <div class="shop-item-price">
+                    <div><small><s>$49</s></small>   $35</div>
+                  <div>
+                    <button class="btn btn-primary shop-item-button"
+                     type="button">ADD TO CART</button>
+                  </div>
+                  </div><!--shop-item-price-->
+              </div><!--shop-item-details-->
+          </div><!--shop-item -->
+
+          <div class="shop-item"><!--Third product -->
+              <img id="picture3" class="shop-item-image" src="images/roseDress.jpg" alt="Rose Dress"
+               onmouseover="newPicture('picture3','images/roseDress2.jpg')"
+              onmouseout="newPicture('picture3','images/roseDress.jpg')">
+              <div class="shop-item-details">
+                  <span class="shop-item-title">Rose Dress</span>
+                  <div class="shop-item-price">
+                    <div><small><s>$59</s></small>    $42</div>
+                  <div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div><!--shop-item-details-->
+          </div><!--shop-item -->
+
+          <div class="shop-item"><!--Fourth product -->
+              <img id="picture4"  class="shop-item-image" src="images/whitePants.jpg" alt="White Pants"
+               onmouseover="newPicture('picture4','images/whitePants2.jpg')"
+              onmouseout="newPicture('picture4','images/whitePants.jpg')">
+              <div class="shop-item-details">
+                  <span class="shop-item-title">White Pants</span>
+                  <div class="shop-item-price">
+                    <div><small><s>$39</s></small>     $28</div>
+                  <div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div><!--shop-item-details-->
+          </div><!--shop-item -->
+
+          <div class="shop-item"><!--Fifth product -->
+              <img id="picture5" class="shop-item-image" src="images/chairwoman.jpg" alt="Chair Woman"
+               onmouseover="newPicture('picture5','images/chairwoman2.jpg')"
+              onmouseout="newPicture('picture5','images/chairwoman.jpg')">
+              <div class="shop-item-details">
+                  <span class="shop-item-title">Chair Woman</span>
+                  <div class="shop-item-price">
+                    <div><small><s>$49</s></small>     $35</div>
+                  <div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div><!--shop-item-details-->
+          </div><!--shop-item -->
+
+          <div class="shop-item"><!--Sixth product -->
+              <img id="picture6" class="shop-item-image" src="images/pinkwoman2.jpg" alt="Pink Blouce"
+               onmouseover="newPicture('picture6','images/pinkwoman.jpg')"
+              onmouseout="newPicture('picture6','images/pinkwoman2.jpg')">
+              <div class="shop-item-details">
+                  <span class="shop-item-title">Pink Blouse</span>
+                  <div class="shop-item-price">
+                  <div><small><s>$59</s></small>   $42</div>
+                  <div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div><!--shop-item-details-->
+          </div><!--shop-item -->
+
+      </div><!--shop-items -->
+  </div>
+
+      <!--Cart start -->
+        <div class="container content-section">
+              <h2 class="section-header">CART</h2>
+              <div class="cart-row">
+                  <p class="cart-item cart-header cart-column">ITEM</p>
+                  <p class="cart-price cart-header cart-column">PRICE</p>
+                  <p class="cart-quantity cart-header cart-column">QUANTITY</p>
+              </div>
+
+              <div class="cart-items">
+              </div><!--The result of JavaScript is reflected here.
+                Clothes with "purchase button" pressed enter here.-->
+
+              <div class="cart-total">
+                  <p class="cart-total-title">Total</p>
+                  <p class="cart-total-price">$0</p>
+              </div>
+              <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+
+          </div>
+          <!--"container content-section "-->
+
+          <div class="logo"><!--Show this shop logo -->
+            <img src="images/logo2.png" alt="M&C Logo">
+            <p class="contact-us"><a href="contact.html">CONTACT US</a></p>
+          </div>
+
+    <script src="cart.js"></script>
+    <!--This is necessary to be able to use JavaScript-->
+
+    <div class="logo-link">Logo made by <a href="https://www.designevo.com/jp/" title="無料オンラインロゴメーカー">DesignEvo</a> logo maker</div>
+    <!--I needed this display when I read the license to use the logo for free. -->
+    <footer><small class="copyright">Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+
+    </div><!--position-fix-header -->
+  </body>
+</html>

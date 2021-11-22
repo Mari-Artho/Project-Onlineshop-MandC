@@ -1,0 +1,103 @@
+<!doctype html><!--Declaration-->
+<html lang="en"><!--Select language-->
+<head><!--User can not see in 'Header'-->
+  <link rel="icon" type="image/png" href="images/logoheart.png"><!--Create Favicon-->
+  <meta charset="utf-8"><!--To character-->
+  <meta name="viewport" content="width=device-width  initial-scale=1.0"><!--Behöver till använda Media-query-->
+  <title>M&C</title><!--Title-->
+  <link type="text/css" rel="stylesheet" href="css/style.css"><!--Declaration for used css-->
+  <link type="text/css" rel="stylesheet" href="css/mobile.css"><!--Declaration for used css-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> <!--To use Google font-->
+</head>
+
+<body><!--What I write inside the body is displayed on the screen.-->
+  <header class="page-header"><!--top of the page are fixed-->
+    <h1 class="navi-color"><a href="index.html">M&C</a></h1>
+      <nav>
+        <ul class="main-navi">
+        <li class="sale-color"><a href="cart.html">SALE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<div class="position-fix-header"><!--Make sure the store name and navigation
+   at the top of the page are fixed in this class. -->
+  <div>
+    <h2 class="sale">SPRING SALE NOW!!</h2>
+    <!--When loaded, this character will move with animation. -->
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start.There are four sliding photos.-->
+        <div class="slide first"><!--Start with the "first" photo -->
+          <img src="images/indexwoman.jpg" alt="Index Woman">
+        </div>
+        <div class="slide">
+          <img src="images/threewoman.jpg" alt="Three Woman">
+        </div>
+        <div class="slide">
+          <img src="images/sleepwoman.jpg" alt="Sleep Woman">
+        </div>
+        <div class="slide">
+          <img src="images/happywoman.jpg" alt="Happy Woman">
+        </div>
+        <!--slide images end-->
+        <!--automatically navigation start.
+        The round button below the photo-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+  </div>
+
+  <div class="about-us"><!--Articles to introduce the store-->
+    <p class="about-us-title">about us</p>
+    <div class="picture-and-text">
+      <p class="about-us-p">M&C is built by Mari & Clara in Sweden since 2021.
+        We are dedicated to affordable, sustainable apparel for young,
+        active women. We source all of our clothes responsibly
+        and do not use animal products such as leather.</p>
+      <img src="images/ocean.jpg" alt="Ocean">
+    </div><!--class="picture-and-text" -->
+  </div><!--class="about-us" -->
+
+  <canvas></canvas><!--för att text-canvaas med JavaScript -->
+
+  <div class="logo"><!--Show this shop logo -->
+    <img src="images/logo2.png" alt="M&C Logo">
+    <p class="contact-us"><a href="contact.html">CONTACT US</a></p>
+  </div>
+
+  <script src="index.js"></script><!--This is necessary to be able to use JavaScript-->
+
+  <div class="logo-link">Logo made by <a href="https://www.designevo.com/jp/" title="無料オンラインロゴメーカー">DesignEvo</a> logo maker</div>
+  <!--I needed this display when I read the license to use the logo for free. -->
+  <footer><small class="copyright">Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+
+  　</div><!--position-fix-header -->
+  </body>
+</html>

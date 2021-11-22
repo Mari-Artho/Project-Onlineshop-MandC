@@ -1,0 +1,63 @@
+<!DOCTYPE html><!--Deklaration for HTML5-->
+<html lang="en"><!--Select language-->
+<head><!--User can not see in 'Header'-->
+  <link rel="icon" type="image/png" href="images/logoheart.png"><!--Create Favicon-->
+  <meta charset="utf-8"><!--To character-->
+  <meta name="viewport" content="width=device-width  initial-scale=1.0">
+  <title>M&C</title><!--Title-->
+  <link type="text/css" rel="stylesheet" href="css/style.css"><!--Declaration for used css-->
+  <link type="text/css" rel="stylesheet" href="css/mobile.css"><!--Declaration for used css-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><!--To use gstatic font-->
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> <!--To use Google font-->
+</head>
+
+  <body><!--What I write inside the body is displayed on the screen.-->
+        <header class="page-header"><!--top of the page is fixed-->
+          <h1 class="navi-color"><a href="index.html">M&C</a></h1>
+          <nav>
+            <ul class="main-navi">
+              <li class="sale-color"><a href="cart.html">SALE</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </header>
+
+    <div class="contact-bk"><!--for background color.-->
+    <div class="kontakta_oss"><!--class for name, address and phone on form.-->
+      <h2>Contact us</h2>
+      <h3>M&C </h3>
+      <p>DrottninggatanXX, 114 XX Stockholm</p>
+      <p>08-1234-5678</p>
+    </div>
+
+    <form action="#"><!--When PHP is not in use, place # within action = "#".-->
+      <div>
+        <label>Name</label><!--Be careful with change CSS as I'm using
+           label selectors for both index.html and contact.html.  -->
+        <input type="text" name="name">
+      </div>
+
+      <div><!--Enclosing the label and input field with <div> tag makes it easier
+         to lay out with CSS.-->
+        <label class="obligatorisk"><small>*</small>
+          Email ( <small>*</small>is necessary)</label>
+          <!--'*'obligatorisk mark is red.-->
+        <input type="email" name="email" required>
+        <!--required = A warning will be displayed if user do not enter it in the E-mail field-->
+      </div>
+
+      <div>
+        <label class="contact-label">Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <input class="send-btn" type="submit" value="Send" onclick="sendClicked()">
+    </form><!--contact input form finish -->
+
+    <script src="cart.js"></script>
+    <!--This is necessary to be able to use JavaScript-->
+    <footer><small class="copyright">Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+    </div><!-- <div class="contact-bk"> -->
+
+  </body>
+</html>
